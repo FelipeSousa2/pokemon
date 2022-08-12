@@ -1,15 +1,17 @@
 <template>
     <header>
-        <h1>Catálogo</h1>
-        <h2>pokemons</h2>
+        <h1>Catálogo pokemons</h1>
+        
     </header>
     <div class="container">
         <div class="bloco-1">
-           <ul>
-                <li v-for="item in pokemons" :key="item.name">
-                    {{item.name}}
-                </li>
-           </ul>
+           <button class="btn-group">
+               <ul class="btn">
+                    <li v-for="item in pokemons" :key="item.name">
+                        {{item.name}}
+                    </li>
+               </ul>
+           </button>
         </div>
           <div class="bloco-2">
             pokemons
@@ -37,21 +39,21 @@ export default {
 
 
 
-<style lang="less" scoped>
+<style>
 
     template {
         font-family: Arial, Helvetica, sans-serif;
     }
 
-    header > h1 h2 {
+    header > h1 {
         margin: auto;
-        
+        margin-bottom: 5pt;
     }
 
    
     .container {
+        font-family: Arial, Helvetica, sans-serif;
         border-radius: 10px 10px;
-        border: 2px solid white;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -59,17 +61,27 @@ export default {
         flex-wrap: wrap;
         row-gap: 10px;
         column-gap: 30px;
-        background-color: #f9eac3;
+        background-image: url("../imagem/tela-fundo.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
         color: black;
         padding: 16px;
         height: 550px;
         width: 700px;
+        
+    }
+
+    .btn-group {
+
     }
 
    
 
     .bloco-1 {
-        box-shadow: 2px 2px rgba(0, 0, 0, 0.562);
+        font-size: 1.2em;
+        color: white;
+        border-radius: 5px 5px;
         border: 2px solid black;
         order: 0;
         flex: 0 1 auto;
@@ -77,12 +89,21 @@ export default {
     }
 
     .bloco-2 {
+        color: white;
+        background-color: rgba(39, 39, 41, 0.486);
+        border-radius: 10px 10px;
         flex-basis: auto;
         height: 500px;
         width: 400px;
-        box-shadow: 2px 2px rgba(0, 0, 0, 0.562);
         border: 2px solid black;
         order: 0;
         flex: 0 1 auto;
+    }
+    .container ul {
+       
+        list-style-type: none;
+        margin: 0;
+        padding: 10px;
+        text-align: left;
     }
 </style>
