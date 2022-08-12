@@ -35,7 +35,9 @@ export default {
 }
 </script>
 
-<style>
+
+
+<style lang="less" scoped>
 
     template {
         font-family: Arial, Helvetica, sans-serif;
