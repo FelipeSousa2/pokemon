@@ -6,7 +6,7 @@
     <div class="container">
         <div class="bloco-1">
            <button class="btn-group">
-               <ul class="btn">
+               <ul>
                     <li v-for="item in pokemons" :key="item.name">
                         {{item.name}}
                     </li>
