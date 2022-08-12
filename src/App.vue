@@ -27,7 +27,7 @@ export default {
 </script>
 
 <style>
- template {
+  template {
         font-family: Arial, Helvetica, sans-serif;
     }
 
@@ -73,4 +73,6 @@ export default {
         order: 0;
         flex: 0 1 auto;
     }
+
+ 
 </style>
