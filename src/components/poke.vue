@@ -5,15 +5,14 @@
     </header>
     <div class="container">
         <div class="bloco-1">
-           <button class="btn-group">
-               <ul>
-                    <li v-for="item in pokemons" :key="item.name">
+           <ul>
+                <li v-for="item in pokemons" :key="item.     name">
                         {{item.name}}
-                    </li>
-               </ul>
-           </button>
+                </li>
+            </ul>
+           
         </div>
-          <div class="bloco-2">
+        <div class="bloco-2">
             pokemons
         </div>
       
