@@ -5,7 +5,7 @@
 <script>
 import pokeVue from './components/poke.vue';
 
-import{api} from './services/services'
+import {api} from './services/services'
 
 export default {
   name: "App",
@@ -20,10 +20,13 @@ export default {
   },
 
   created() {
-       api.get('pokemon').then(data => this.pokemons = data.data.results)
-    }
+    api.get('pokemon').then(data => this.pokemons = data.data.results)
+  }
 
 }
+
+
+
 </script>
 
 <style>
