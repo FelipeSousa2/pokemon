@@ -5,7 +5,7 @@
     </header>
     <div class="container">
         <div class="bloco-1">
-           
+          
             <ul>
                 
                 <li v-for="item in pokemons"  :key="item.   name">
@@ -18,10 +18,11 @@
         
        
         <div class="bloco-2">
+            
             <div class="img">
-                
+               
                 <img
-                src="https://raw.githubusercontent.com/PokeApi/sprites/master/sprites/pokemon/3.png" alt="item.name"
+                src="https://raw.githubusercontent.com/PokeApi/sprites/master/sprites/pokemon/17.png" alt="item.name"
                 >
             </div>
             
@@ -107,6 +108,7 @@
     
 
     .bloco-2 {
+        
         color: white;
         background-color: rgba(39, 39, 41, 0.486);
         border-radius: 10px 10px;
@@ -128,7 +130,7 @@
 
     img {
         height: 30vh;
-        border: 2px solid white;
+       
         margin-top: 25px;
         width: 70%;
     }
